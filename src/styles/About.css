@@ -1,0 +1,245 @@
+/* src/styles/About.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #f74c1b;
+  --light_green: #43ba7f;
+  --dark_green: #43ba7f;
+  --half_wite: #ffffff;
+  --dark_blue: #212741;
+  --gray: #5e697c;
+  --ft_color: #181d30;
+  --purple: #400336;
+  --purple-light: #9d4edd;
+  --white: #ffffff;
+}
+
+/* ===== TERA ORIGINAL + ENHANCEMENTS ===== */
+.about_page {
+  height: 110vh;
+  background-color: var(--half_wite);
+  /* border: 1px solid red;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9f5ff 0%, #f0e6ff 100%);
+  padding: 1rem;
+}
+.about_page .main_container{
+    border: 10px solid green;
+    margin-top: 30px;
+    margin-bottom: 30px;
+      height: auto;
+        width: 90%;
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    border-radius: 24px;
+  background: rgba(64, 3, 54, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(157, 78, 221, 0.3);
+  box-shadow: 0 8px 25px rgba(64, 3, 54, 0.2);
+  transition: all 0.4s ease;
+}
+.about_page .main_container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(64, 3, 54, 0.3), 0 0 30px rgba(157, 78, 221, 0.25);
+}
+
+/* INTRODUCTION BLOCK – Glass + Hover */
+.about_page .introduction_block {
+  /* border: 1px solid blue; */
+  /* height: auto;
+  width: q\%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  /* padding: 1.5rem; */
+  /* border-radius: 24px;
+  background: rgba(64, 3, 54, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(157, 78, 221, 0.3);
+  box-shadow: 0 8px 25px rgba(64, 3, 54, 0.2);
+  transition: all 0.4s ease; */
+}
+
+
+/* TEXT SECTION */
+.introduction_block .introduction {
+  height: auto;
+  /* border: 1px solid red; */
+  width: 60%;
+  padding: 1rem;
+}
+
+/* Title – Gradient + Glow */
+.main_container .line1 {
+  font-size: 40px;
+  font-weight: 700;
+  width: 60%;
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  color: var(--purple);
+  background: linear-gradient(90deg, var(--purple-light), #d7baf3);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  background-clip: text;
+  align-self: center;
+  padding: 8px 16px;
+  text-shadow: 0 3px 10px rgba(157, 78, 221, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+.main_container .line1::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--purple-light);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+}
+.main_container .line1:hover {
+  color: var(--purple-light);
+  text-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
+}
+
+/* Description – Glass Card */
+.introduction .line2 {
+  font-size: 20px;
+  font-weight: 400;
+  /* text-align: center; */
+  border-radius: 14px;
+  color: black;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1.4rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.introduction .line2:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlighted Spans */
+.introduction .line2 span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--purple);
+  background: linear-gradient(transparent 65%, #e6ccff 65%);
+  padding: 0 3px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.introduction .line2 span:hover {
+  background: var(--purple-light);
+  color: white;
+  transform: scale(1.06);
+}
+
+/* IMAGE SECTION */
+.introduction_block .pic {
+  height: 100%;
+  /* border: 1px solid red; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction_block .pic img {
+    margin-top: 80px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 4px solid rgba(157, 78, 221, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+
+.introduction_block .pic img:hover {
+  transform: scale(1.07) rotate(0.5deg);
+  border-color: var(--purple-light);
+  box-shadow: 0 0 35px rgba(157, 78, 221, 0.5), 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* SKILL BLOCK – Tera Original (Untouched) */
+.about_page .skill_block {
+  /* border: 1px solid blue; */
+  height: auto;
+  width: 100%;
+}
+.skill_block .outer_skill_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-left: 250px;
+    /* border: 1px solid rgb(238, 255, 0); */
+    margin-bottom: 10px;
+    
+}
+.skill_block .outer_skill_div .skill{
+    /* border: 1px solid hotpink; */
+    border-radius: 14px;
+  color: black;
+  background: rgba(255, 255, 255, 0.75);
+  /* padding: 1.4rem; */
+  /* line-height: 1.5; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+
+}
+.skill_block .outer_skill_div .skill:hover{
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+.skill img{
+        height: 100px;
+
+}
+/* RESPONSIVE – Tera Layout Same */
+@media (max-width: 992px) {
+  .about_page .introduction_block {
+    width: 85%;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+  .introduction_block .introduction,
+  .introduction_block .pic {
+    width: 100%;
+  }
+  .introduction .line1 { width: 70%; font-size: 42px; }
+  .introduction_block .pic img { height: 260px; }
+}
+
+@media (max-width: 768px) {
+  .introduction .line1 { font-size: 38px; }
+  .introduction .line2 { font-size: 18px; padding: 1.2rem; }
+  .introduction_block .pic img { height: 220px; }
+}
