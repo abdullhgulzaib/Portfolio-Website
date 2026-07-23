@@ -6,6 +6,7 @@ import firstpagebg from '../assets/first_page_img.png';
 const First_page = () => {
   return (
     <div
+    id='Home'
       className="First_page"
       style={{
         backgroundImage: `url(${firstpagebg})`,

@@ -1,0 +1,195 @@
+.skills-section {
+  padding: 60px 24px;
+  /* background: #0d0512; */
+  background-image: url("../assets/purple-geometric-luxury-background-with-diagonal-stripe-lines-vector.jpg");
+  /* min-height: 600px;
+   */
+   height: 110vh;
+   display: flex;
+   flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.skills-title {
+  position: relative; 
+  text-align: center;
+  margin: 0 auto 70px auto; 
+  width: fit-content;
+  font-size: 3.5rem; 
+  font-weight: 900; 
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(90deg, #ffffff 0%, #f5f5f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.3));
+  cursor: default;
+}
+
+.skills-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 6px;
+  
+  background: #f5f5f5; 
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+  
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
+}
+
+.skills-title:hover {
+  filter: drop-shadow(0 4px 25px rgba(255, 255, 255, 0.6));
+}
+
+.skills-title:hover::after {
+  width: 100%;
+  background: #661694;
+  box-shadow: 0 0 20px rgba(92, 14, 145, 0.8);
+}
+.skills-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-around;
+/* border: 2px solid rgba(0, 226, 49, 0.445); */
+
+}
+
+.hex-grid {
+  position: relative;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+}
+
+.hex-item {
+  position: absolute;
+  width: var(--hex-width, 160px);
+  height: var(--hex-height, 140px);
+  cursor: pointer;
+  outline: none;
+}
+
+.hex-shape {
+  /* Existing properties... */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transition: transform 0.25s ease, filter 0.25s ease, background 0.25s ease;
+
+  background: rgba(30, 15, 45, 0.4); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(183, 107, 255, 0.2); 
+  box-shadow: inset 0 0 20px rgba(183, 107, 255, 0.05); 
+}
+
+.hex-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.hex-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #eaddff;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.hex-item:hover .hex-shape,
+.hex-item:focus .hex-shape {
+  transform: scale(1.08);
+  background: linear-gradient(160deg, #2a1638, #170c20);
+}
+
+.hex-active .hex-shape {
+  filter: drop-shadow(0 0 12px #b76bff) drop-shadow(0 0 24px rgba(183, 107, 255, 0.6));
+  border-color: #d9aaff;
+}
+
+.info-card {
+  width: 350px;
+  min-height: 250px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(30, 15, 45, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* border: 1px solid red; */
+  border: 5px solid rgba(183, 107, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #eaddff;
+  opacity: 0.6;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.info-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.info-card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.info-card-icon {
+  font-size: 2rem;
+}
+
+.info-card-subtitle {
+  font-size: 0.8rem;
+  color: #b76bff;
+  font-weight: 600;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d8c8ec;
+}
+
+.info-card-placeholder {
+  color: #9a86b8;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+/* Inside Skills.css */
+.custom-skill-icon {
+  width: 150px; /* Adjust this size to fit your hexagons perfectly */
+  height: 150px;
+  object-fit: contain; /* This prevents the image from stretching */
+  margin-bottom: 5px;
+}
