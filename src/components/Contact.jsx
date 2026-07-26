@@ -17,7 +17,7 @@ export default function Contact() {
         
         {/* Left Side: Contact Info */}
         <div className="contact-info">
-       <div className="contact-icons">
+       <div className="contact-icons" id="contact-icons">
         <a href="https://wa.me/923249331337" target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <WhatsappIcon />
             </a>
@@ -25,15 +25,15 @@ export default function Contact() {
               <LinkedinIcon />
             </a>
        </div>
-       <div className="contact-icons">
+       <div className="contact-icons" id="contact-icons">
          <a href="https://github.com/abdullhgulzaib" target="_blank" rel="noreferrer" aria-label="GitHub">
               <GithubIcon />
             </a>
 <a href="mailto:abdullahgulzaib69@gmail.com" aria-label="Gmail">
-  <GmailIcon />
+  <GmailIcon size={35} />
 </a>
        </div>
-       <div className="contact-icons">
+       <div className="contact-icons"  id="contact-icons">
           <a href="https://www.instagram.com/abdul_.gulzaibi?igsh=Y3d1dG16Z2s0bWdj" target="_blank" rel="noreferrer" aria-label="Instagram">
               <InstagramIcon />
             </a>
@@ -44,7 +44,7 @@ export default function Contact() {
         </div>
 
         {/* Right Side: The Glassmorphism Form */}
-        <div className="contact-form-wrapper">
+        <div className="contact-form-wrapper" >
           <ContactForm />
         </div>
 

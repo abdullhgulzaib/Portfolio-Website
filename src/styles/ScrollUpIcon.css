@@ -1,0 +1,26 @@
+.scroll-up-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  width: fit-content;
+  /* Applies the initial cyber-purple neon glow */
+  filter: drop-shadow(0 4px 12px rgba(183, 107, 255, 0.5));
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.scroll-up-wrapper:hover {
+  /* Magnifies the button and intensifies the glow when hovered */
+  transform: translateY(-5px) scale(1.05);
+  filter: drop-shadow(0 8px 20px rgba(183, 107, 255, 0.8));
+}
+
+.scroll-up-svg {
+  transition: all 0.3s ease;
+}
+
+.scroll-up-wrapper:active .scroll-up-svg {
+  /* Gives a satisfying "click" compression effect */
+  transform: scale(0.9);
+}

@@ -1,15 +1,33 @@
+/* 1. Import BOTH fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* 2. Set up variables to make your life easy */
+:root {
+  --font-tech: "Orbitron", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* Set Poppins as the default for the whole site so paragraphs/forms are readable */
+  font-family: var(--font-body);
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 3. Force Orbitron onto ALL your headers and titles automatically */
+h1, h2, h3, h4, h5, h6, .contact\.title, .form-title, .Header a,.container span, .container .line2,.main_container .line1,.introduction span, footer span{
+  font-family: var(--font-tech);
+  font-optical-sizing: auto;
+  font-weight: 700; /* Makes your titles nice and bold */
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

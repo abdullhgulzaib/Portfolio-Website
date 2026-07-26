@@ -15,8 +15,10 @@
   --purple: #400336;
   --purple-light: #9d4edd;
   --white: #ffffff;
+  
 }
 .contact-section {
+  height: 105vh;
   position: relative;
   padding: 80px 24px 0 24px;
   background: linear-gradient(135deg, #f9f5ff 0%, #f0e6ff 100%);
@@ -189,6 +191,14 @@ display: flex;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.contact-form:hover {
+  transform: translateY(-8px);
+  border-color: rgba(183, 107, 255, 0.7);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 
+              0 0 25px rgba(183, 107, 255, 0.2),
+              inset 0 0 12px rgba(183, 107, 255, 0.1);
 }
 
 .form-title {
@@ -262,3 +272,14 @@ input:-webkit-autofill:active {
 
 
 
+#contact-icons{
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(183, 107, 255, 0.15);
+}
+#contact-icons:hover{
+transform: translateY(-8px);
+  border-color: rgba(183, 107, 255, 0.7);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 
+              0 0 25px rgba(183, 107, 255, 0.2),
+              inset 0 0 12px rgba(183, 107, 255, 0.1);
+}
