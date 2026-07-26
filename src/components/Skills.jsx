@@ -2,14 +2,14 @@ import React, { useState } from "react";
 // import "../styles/Skills.css";
 import "../styles/Skills.css";
 
-import HtmlIcon from "./Icons/HtmlIcon";
-import CssIcon from "./Icons/CssIcon";
-import JsIcon from "./Icons/JsIcon";
-import GitIcon from "./Icons/GitIcon";
-import GithubIcon from "./Icons/GithubIcon";
-import ReactIcon from "./Icons/ReactIcon";
-import CppIcon from "./Icons/CppIcon";
-import JavaIcon from "./Icons/JavaIcon";
+import HtmlIcon from "./SkillsIcons/HtmlIcon";
+import CssIcon from "./SkillsIcons/CssIcon";
+import JsIcon from "./SkillsIcons/JsIcon";
+import GitIcon from "./SkillsIcons/GitIcon";
+import GithubIcon from "./SkillsIcons/GithubIcon";
+import ReactIcon from "./SkillsIcons/ReactIcon";
+import CppIcon from "./SkillsIcons/CppIcon";
+import JavaIcon from "./SkillsIcons/JavaIcon";
 
 
 
