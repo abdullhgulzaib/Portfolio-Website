@@ -257,47 +257,8 @@ input:-webkit-autofill:active {
 .input-group textarea:not(:placeholder-shown) ~ label {
   top: -20px;
   font-size: 0.85rem;
-  color: var(--purple-light, #9d4edd); /* Bright Cyan label color */
+  color: var(--half_wite, #9d4edd); /* Bright Cyan label color */
 }
 
-/* --- Submit Button --- */
-.submit-btn {
-  position: relative;
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(90deg, #8A63D2, #4C366B);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.5s ease, color 0.5s ease;
-}
-.submit-btn::after{
-    content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;           
-  background-color: var(--purple-light, #9d4edd); 
-  transition: width 0.5s ease;
-  border-radius: 8px;
-}
-.submit-btn:hover::after {
-  width: 100%; 
-}
-.submit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(183, 107, 255, 0.4);
-  background: var(--whitesmoke, #ffffff);
-  color: var(--purple-light, #9d4edd); 
-}
-.result-message {
-  margin-top: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--whitesmoke, #ffffff);
-  text-align: center;
-}
+
 
