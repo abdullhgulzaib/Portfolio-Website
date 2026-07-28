@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import '../styles/First_page.css';
+import '../styles/FirstPage.css';
 
-const First_page = () => {
+const FirstPage = () => {
   const spotlightRef = useRef(null);
   const heroRef = useRef(null);
 
@@ -136,4 +136,4 @@ const First_page = () => {
   );
 };
 
-export default First_page;
+export default FirstPage;

@@ -1,4 +1,4 @@
-import  react from 'react'
+// import  react from 'react'
 import '../styles/Footer.css'
 import AGLogo from './FooterIcons/AgLogo'
 import FooterCard from './FooterCard'

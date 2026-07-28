@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './index.css';
 import Header from './components/Header'
-import First_page from './components/First_page';
+import First_page from './components/FirstPage';
 import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';

@@ -1,10 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import MyImg from "../assets/my_img.png";
-import HTML_logo from "../assets/html_logo.png";
-// import CSS_logo from "../assets/css_logo.png";
-import JS_logo from "../assets/js_logo.png";
-import REACT_logo from "../assets/react.png";
+
 
 const About = () => {
   return (
