@@ -31,7 +31,7 @@ const About = () => {
             </p>
           </div>
           <div className="pic">
-            <img src={MyImg} alt="My Picture" />
+            <img src={MyImg} alt="Profile portrait" />
           </div>
         </div>
         {/* <div className="skill_block">
