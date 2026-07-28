@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProjectDeck from './components/ProjectsDeck/ProjectDeck';
+import EducationExperience from './components/EducationExperience';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <First_page/>
     <About/>
     <Skills/>
+    <EducationExperience/>
     <ProjectDeck/>
     <Contact/>
     <Footer/>

@@ -125,7 +125,7 @@
 }
 .Header .nav{
 /* border: 1px solid black; */
-width: 50%;
+width: 60%;
 display: flex;
 justify-content: space-around;
 align-items: center;

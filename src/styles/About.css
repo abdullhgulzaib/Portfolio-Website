@@ -54,7 +54,7 @@
   box-shadow: 0 15px 35px rgba(64, 3, 54, 0.3), 0 0 30px rgba(157, 78, 221, 0.25);
 }
 
-/* INTRODUCTION BLOCK – Glass + Hover */
+
 .about_page .introduction_block {
   /* border: 1px solid blue; */
   /* height: auto;
@@ -117,20 +117,21 @@
 
 .main_container .line1:hover::after {
   width: 100%;
-  background: #661694;
+  background: var(--purple, #400336);
   box-shadow: 0 0 20px rgba(64, 3, 54, 0.5);
 }
 
 /* Description – Glass Card */
 .introduction .line2 {
+  /* border: 1px solid red; */
   font-size: 20px;
   font-weight: 400;
   /* text-align: center; */
   border-radius: 14px;
   color: black;
-  background: rgba(255, 255, 255, 0.75);
   padding: 1.4rem;
   line-height: 1.5;
+  background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
 }
