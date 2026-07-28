@@ -60,7 +60,7 @@
   50% { transform: translate(30px, -20px) scale(1.1); }
 }
 
-/* ---- Content ---- */
+/* ---- Project Features ---- */
 .deck-content {
   position: relative;
   z-index: 2;
@@ -73,20 +73,51 @@
 
 .deck-title {
   font-size: clamp(28px, 5vw, 42px);
-  font-weight: 600;
-  color: #ffffff;
-  margin: 0 0 8px 0;
+  font-weight: 800;
+  color: whitesmoke; /* Whitesmoke for the dark theme */
+  margin: 0 0 15px 0; /* Added spacing for the line to breathe */
   letter-spacing: 0.5px;
   text-align: center;
+  position: relative;
+  cursor: default;
+  width: fit-content;
+  display: inline-block;
+  transition: all 0.35s ease-in-out;
+}
+
+.deck-title:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  text-shadow: 0 4px 15px rgba(183, 107, 255, 0.6);
+}
+
+.deck-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%); /* Keeps the line perfectly centered */
+  width: 80px;
+  height: 5px;
+  background: var(--purple-light, #b76bff);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(183, 107, 255, 0.5);
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.deck-title:hover::after {
+  width: 100%;
+  background: #d7baf3; /* A bright, icy light-purple to pop against space */
+  box-shadow: 0 0 20px rgba(183, 107, 255, 0.8);
 }
 
 .deck-subtitle {
   font-size: 13px;
-  color: #6b7280;
+  /* Changed from plain grey to a soft purplish-grey to blend perfectly with the theme */
+  color: #9089ac; 
   margin-bottom: 48px;
   text-align: center;
 }
-
 /* ---- 3D Stage ---- */
 .stage {
   position: relative;

@@ -83,44 +83,42 @@
   padding: 1rem;
 }
 
-/* Title – Gradient + Glow */
+/* ---- About Me Title ---- */
 .main_container .line1 {
   font-size: 40px;
-  font-weight: 700;
-  /* width: 60%; */
-  /* text-align: center; */
-  /* border: 1px solid black; */
-  border-radius: 12px;
-  color: var(--purple);
-  background: linear-gradient(90deg, var(--purple-light), #d7baf3);
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  background-clip: text;
-  align-self: center;
-  padding: 8px 16px;
-  text-shadow: 0 3px 10px rgba(157, 78, 221, 0.4);
-  transition: all 0.3s ease;
+  font-weight: 800;
+  color: var(--purple-light); /* Deep purple for high contrast on light background */
   position: relative;
-  cursor: pointer;
-  overflow: hidden;
+  cursor: default;
+  width: fit-content;
   display: inline-block;
-  transition: all 0.4s ease;
+  margin-bottom: 20px;
+  transition: all 0.35s ease-in-out;
 }
+
+.main_container .line1:hover {
+  color: var(--half_wite);
+  transform: scale(1.05); 
+  text-shadow: 0 4px 15px rgba(157, 78, 221, 0.3); 
+}
+
 .main_container .line1::after {
   content: '';
   position: absolute;
-  bottom: 4px;
-  left: 50%;
-  width: 0;
-  height: 3px;
-  background: var(--purple-light);
-  border-radius: 2px;
-  transition: width 0.5s ease;
-  transform: translateX(-50%);
+  bottom: -4px; 
+  left: 0; /* Starts from the left */
+  width: 80px; 
+  height: 5px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.4); 
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease, box-shadow 0.4s ease;
 }
-.main_container .line1:hover {
-  color: var(--purple-light);
-  text-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
+
+.main_container .line1:hover::after {
+  width: 100%;
+  background: #661694;
+  box-shadow: 0 0 20px rgba(64, 3, 54, 0.5);
 }
 
 /* Description – Glass Card */
