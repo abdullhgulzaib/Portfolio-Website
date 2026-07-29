@@ -7,13 +7,11 @@
     --gray: #5e697c;
     --ft_color: #181d30;
     --purple:#400336;
-    /* --purple: #6a0dad; */
   --purple-light: #9d4edd;
   --white: #ffffff;
-  /* --gray: #f0f0f0; */
   }
+
 .Header {
-  /* border: 1px solid var(--orange); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,7 +30,95 @@
   z-index: 1000;
   position: fixed;
 }
-/* src/styles/header.css */
+
+/* ---- Hamburger Button ---- */
+.hamburger {
+  display: none;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: var(--half_wite);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ---- Mobile Nav Overlay ---- */
+.mobile-nav {
+  display: flex;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, 
+    rgba(106, 13, 173, 0.96) 0%, 
+    rgba(187, 134, 252, 0.94) 50%, 
+    rgba(138, 43, 226, 0.96) 100%
+  );
+  backdrop-filter: blur(14px);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 6px;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.mobile-nav.open {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: all;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--half_wite);
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  width: 85%;
+  max-width: 280px;
+  text-align: center;
+}
+
+.mobile-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(203, 180, 219, 0.3);
+}
 
 /* Outer Logo Container */
 .Header .Outer_logo {
@@ -44,7 +130,6 @@
   padding: 8px 12px;
   position: relative;
   z-index: 2;
-  /* border:1px solid black; */
   transition: all 0.3s ease;
 }
 
@@ -56,14 +141,13 @@
 
 /* Rectangle Logo Image */
 .Header .Outer_logo img {
-  height: 50px;                          /* Thoda chhota for rectangle */
+  height: 50px;
   width: auto;
-  max-width: 140px;                      /* Wide rectangle */
-  border-radius: 16px;                   /* Soft rounded corners */
+  max-width: 140px;
+  border-radius: 16px;
   object-fit: contain;
-  padding: 8px 16px;                     /* Inner padding */
-  /* background: rgba(255, 255, 255, 0.22); Glass background */
-  backdrop-filter: blur(14px);           /* Frosted glass */
+  padding: 8px 16px;
+  backdrop-filter: blur(14px);
   border: 2.5px solid rgba(255, 255, 255, 0.35);
   box-shadow: 
     0 6px 18px rgba(0, 0, 0, 0.18),
@@ -79,7 +163,6 @@
   box-shadow: 
     0 0 28px rgba(187, 134, 252, 0.55),
     0 10px 30px rgba(0, 0, 0, 0.25);
-  /* background: rgba(255, 255, 255, 0.3); */
 }
 
 /* Floating Animation */
@@ -88,57 +171,19 @@
   50% { transform: translateY(-5px); }
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .Header .Outer_logo {
-    width: 12%;
-  }
-  .Header .Outer_logo img {
-    height: 50px;
-    max-width: 120px;
-    padding: 6px 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Header .Outer_logo {
-    width: 15%;
-  }
-  .Header .Outer_logo img {
-    height: 45px;
-    max-width: 100px;
-    padding: 5px 12px;
-    border-radius: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Header .Outer_logo {
-    width: 22%;
-  }
-  .Header .Outer_logo img {
-    height: 40px;
-    max-width: 85px;
-    padding: 4px 10px;
-    border-radius: 10px;
-  }
-}
 .Header .nav{
-/* border: 1px solid black; */
-width: 60%;
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: inherit;
-
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
 }
+
 /* Nav Links - Base Style */
 .Header .nav a {
-/* border: 1px solid black; */
-
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.25rem;           /* 20px */
+  font-size: 1.25rem;
   color: var(--purple);
   padding: 8px 16px;
   border-radius: 50px;
@@ -157,7 +202,6 @@ height: inherit;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(203, 180, 219, 0.616);
 }
-
 
 .Header .nav a.active {
   color: var(--half_wite);
@@ -184,63 +228,78 @@ height: inherit;
   width: 70%;
 }
 
-/* Mobile Responsive */
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 992px) {
+  .Header .Outer_logo {
+    width: 12%;
+  }
+  .Header .Outer_logo img {
+    height: 50px;
+    max-width: 120px;
+    padding: 6px 14px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .Header {
+    justify-content: center;
+    padding: 0 16px;
+  }
+  
+  .Header .Outer_logo {
+    width: auto;
+  }
+  
   .Header .nav a {
     font-size: 1.1rem;
     padding: 6px 12px;
   }
 }
 
-/* ---- Small tablets: tighten spacing, keep single row ---- */
 @media (max-width: 640px) {
-  .Header {
-    justify-content: space-between;
-    padding: 0 12px;
-  }
-  .Header .nav {
-    width: auto;
-    gap: 2px;
-  }
-  .Header .nav a {
-    font-size: 0.85rem;
-    padding: 6px 8px;
+  .Header .Outer_logo img {
+    height: 45px;
+    max-width: 100px;
+    padding: 5px 12px;
+    border-radius: 12px;
   }
 }
 
-/* ---- Phones: 6 links no longer fit in one row, so stack the header
-   (logo on top, nav wraps into 2 rows beneath it). Height becomes
-   auto here — First_page.css and index.css compensate with a matching
-   offset (see their 480px / scroll-margin-top rules). ---- */
 @media (max-width: 480px) {
   .Header {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    height: auto;
-    min-height: auto;
-    padding: 8px 0 6px;
+    height: 65px;
+    min-height: 65px;
+    padding: 0 12px;
   }
+  
   .Header .Outer_logo {
     width: auto;
     height: auto;
-    padding: 2px 0 4px;
+    padding: 0;
   }
+  
   .Header .Outer_logo img {
-    height: 36px;
+    height: 40px;
     max-width: 90px;
-    padding: 3px 8px;
+    padding: 4px 10px;
+    border-radius: 10px;
   }
-  .Header .nav {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    row-gap: 2px;
-    column-gap: 2px;
-    padding: 0 6px;
-  }
-  .Header .nav a {
-    font-size: 0.68rem;
-    padding: 5px 7px;
-    letter-spacing: 0.2px;
+  
+  .mobile-nav a {
+    font-size: 0.95rem;
+    padding: 8px 20px;
   }
 }
