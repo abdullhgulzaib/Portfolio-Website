@@ -5,7 +5,8 @@
 .project-deck-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: auto;                    /* Adjusts to content — no extra dead space */
+  min-height: auto;                /* Removed forced 100vh */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,8 +75,8 @@
 .deck-title {
   font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
-  color: whitesmoke; /* Whitesmoke for the dark theme */
-  margin: 0 0 15px 0; /* Added spacing for the line to breathe */
+  color: whitesmoke;
+  margin: 0 0 15px 0;
   letter-spacing: 0.5px;
   text-align: center;
   position: relative;
@@ -96,7 +97,7 @@
   position: absolute;
   bottom: -10px;
   left: 50%;
-  transform: translateX(-50%); /* Keeps the line perfectly centered */
+  transform: translateX(-50%);
   width: 80px;
   height: 5px;
   background: var(--purple-light, #b76bff);
@@ -107,17 +108,17 @@
 
 .deck-title:hover::after {
   width: 100%;
-  background: #d7baf3; /* A bright, icy light-purple to pop against space */
+  background: #d7baf3;
   box-shadow: 0 0 20px rgba(183, 107, 255, 0.8);
 }
 
 .deck-subtitle {
   font-size: 13px;
-  /* Changed from plain grey to a soft purplish-grey to blend perfectly with the theme */
-  color: #9089ac; 
+  color: #9089ac;
   margin-bottom: 48px;
   text-align: center;
 }
+
 /* ---- 3D Stage ---- */
 .stage {
   position: relative;
@@ -484,6 +485,7 @@
   .project-deck-section {
     align-items: flex-start;
     padding: 48px 16px 60px;
+    height: auto;              /* Ensures no extra space on tablets */
   }
   .deck-subtitle { margin-bottom: 36px; }
   .stage {
@@ -512,7 +514,10 @@
 }
 
 @media (max-width: 420px) {
-  .project-deck-section { padding: 36px 12px 48px; }
+  .project-deck-section { 
+    padding: 36px 12px 48px; 
+    height: auto;            /* Ensures no extra space on phones */
+  }
   .deck-title { font-size: clamp(24px, 7vw, 30px); }
   .deck-subtitle { font-size: 12px; margin-bottom: 30px; }
   .stage {
