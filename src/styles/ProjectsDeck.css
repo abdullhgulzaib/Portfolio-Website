@@ -1,12 +1,9 @@
-/* ============================================
-   3D PROJECT VAULT — STYLES
-   ============================================ */
 
 .project-deck-section {
   position: relative;
   width: 100%;
-  height: auto;                    /* Adjusts to content — no extra dead space */
-  min-height: auto;                /* Removed forced 100vh */
+  height: auto;                    
+  min-height: auto;                
   display: flex;
   align-items: center;
   justify-content: center;
@@ -310,9 +307,6 @@
   50% { transform: translateY(-25px) translateX(12px); opacity: 0.8; }
 }
 
-/* ============================================
-   MODAL
-   ============================================ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -466,7 +460,7 @@
   padding: 10px 20px;
 }
 
-/* ---- Scrollbar for modal ---- */
+
 .modal-card::-webkit-scrollbar {
   width: 6px;
 }
@@ -485,7 +479,7 @@
   .project-deck-section {
     align-items: flex-start;
     padding: 48px 16px 60px;
-    height: auto;              /* Ensures no extra space on tablets */
+    height: auto;              
   }
   .deck-subtitle { margin-bottom: 36px; }
   .stage {
@@ -516,7 +510,7 @@
 @media (max-width: 420px) {
   .project-deck-section { 
     padding: 36px 12px 48px; 
-    height: auto;            /* Ensures no extra space on phones */
+    height: auto;            
   }
   .deck-title { font-size: clamp(24px, 7vw, 30px); }
   .deck-subtitle { font-size: 12px; margin-bottom: 30px; }

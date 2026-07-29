@@ -1,4 +1,4 @@
-/* 1. Increased the icon size significantly for better visibility */
+
 .card svg {
   height: 32px; 
   width: auto;
@@ -10,10 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Changed from light grey to a deep dark purple to match the glass footer */
+
   background: rgba(22, 10, 43, 0.9); 
-  border-radius: 10px; /* Softened the edges to match the theme */
-  border: 1px solid rgba(183, 107, 255, 0.3); /* Subtle purple border */
+  border-radius: 10px; 
+  border: 1px solid rgba(183, 107, 255, 0.3); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
@@ -31,7 +31,6 @@
   z-index: 1;
 }
 
-/* Changed the left sliding door to a deep cyber purple */
 .card::before {
   content: "";
   left: 0;
@@ -39,7 +38,7 @@
   background-color: #7a22b8; 
 }
 
-/* Changed the right sliding door to your vibrant neon purple */
+
 .card::after {
   content: "";
   right: 0;
@@ -47,7 +46,6 @@
   background-color: #b76bff; 
 }
 
-/* Added a glowing purple shadow when the card is hovered */
 .card:hover {
   box-shadow: 0 8px 25px rgba(183, 107, 255, 0.4);
   border-color: rgba(183, 107, 255, 0.8);
@@ -58,7 +56,7 @@
   z-index: -3;
 }
 
-/* Keep a slight purple tint on the doors when they slide up/down */
+
 .card:hover::before {
   opacity: 0.3;
   transform: translateY(-100%);
@@ -77,7 +75,7 @@
   width: 100%;
   height: 100%;
   color: whitesmoke;
-  /* Updated to your futuristic font */
+
   font-family: var(--font-tech), 'Orbitron', sans-serif; 
   font-size: 22px;
   font-weight: 700;
@@ -104,7 +102,7 @@
   transform: scale(1);
 }
 
-/* Changed the hover background highlight from white to a soft glowing purple */
+
 .card .social-link:hover {
   background-color: rgba(183, 107, 255, 0.25); 
   animation: bounce_613 0.4s linear;

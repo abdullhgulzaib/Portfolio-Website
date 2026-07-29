@@ -15,7 +15,7 @@ export default function EducationExperience() {
           {/* Education Card */}
           <div className="glass-card">
             <div className="card-header">
-              {/* <span className="icon">🎓</span> */}
+    
               <h3>Education</h3>
             </div>
             <div className="card-body">
@@ -24,8 +24,7 @@ export default function EducationExperience() {
               
               <div className="meta-info">
                 <span className="duration">2025 — 2029</span>
-                {/* <span className="badge status">Currently Pursuing</span> */}
-                {/* <span className="badge gpa">3.3 CGPA</span> */}
+          
               </div>
               
               <div className="details-section">
@@ -42,7 +41,7 @@ export default function EducationExperience() {
           {/* Experience Card */}
           <div className="glass-card">
             <div className="card-header">
-              {/* <span className="icon">💼</span> */}
+              
               <h3>Experience</h3>
             </div>
             <div className="card-body">
@@ -51,7 +50,7 @@ export default function EducationExperience() {
               
               <div className="meta-info">
                 <span className="duration">2023 — Present</span>
-                {/* <span className="badge status">Self-Employed</span> */}
+               
               </div>
               
               <div className="details-section">

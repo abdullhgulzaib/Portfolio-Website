@@ -19,7 +19,6 @@
   --white: #ffffff;
 }
 
-/* ===== TERA ORIGINAL + ENHANCEMENTS ===== */
 .about_page {
   height: 110vh;
   background-color: var(--half_wite);
@@ -87,7 +86,7 @@
 .main_container .line1 {
   font-size: 40px;
   font-weight: 800;
-  color: var(--purple-light); /* Deep purple for high contrast on light background */
+  color: var(--purple-light); 
   position: relative;
   cursor: default;
   width: fit-content;
@@ -106,7 +105,7 @@
   content: '';
   position: absolute;
   bottom: -4px; 
-  left: 0; /* Starts from the left */
+  left: 0;
   width: 80px; 
   height: 5px;
   background: var(--white);
@@ -121,7 +120,6 @@
   box-shadow: 0 0 20px rgba(64, 3, 54, 0.5);
 }
 
-/* Description – Glass Card */
 .introduction .line2 {
   /* border: 1px solid red; */
   font-size: 20px;
@@ -185,7 +183,7 @@
   box-shadow: 0 0 35px rgba(157, 78, 221, 0.5), 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-/* SKILL BLOCK – Tera Original (Untouched) */
+
 .about_page .skill_block {
   /* border: 1px solid blue; */
   height: auto;
@@ -222,7 +220,7 @@
         height: 100px;
 
 }
-/* RESPONSIVE – Tera Layout Same */
+
 @media (max-width: 992px) {
   .about_page {
     height: auto;
@@ -239,7 +237,7 @@
   .introduction_block .pic {
     width: 100%;
   }
-  /* Image first, text second on mobile/tablet — no JSX reorder needed */
+ 
   .introduction_block .pic { order: -1; }
   .introduction_block .introduction { padding: 0; }
 
@@ -269,8 +267,7 @@
   .introduction .line1 { font-size: 26px; width: auto; margin-bottom: 8px; }
   .introduction_block .pic img { height: 150px; border-width: 3px; }
 
-  /* Shorter, wider text box: less inner padding = more characters per
-     line = fewer wrapped lines = noticeably shorter overall height. */
+
   .introduction .line2 {
     font-size: 13.5px;
     padding: 0.8rem 0.9rem;

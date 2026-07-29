@@ -2,7 +2,6 @@ import { useState } from 'react';
 import "../styles/Contact.css"; 
 import toast, { Toaster } from 'react-hot-toast';
 
-// 1. Import your brand new button component
 import SubmitButton from './SubmitButton'; 
 
 export default function ContactForm() {
@@ -32,7 +31,6 @@ export default function ContactForm() {
     } catch (error) {
       toast.error("Network error. Please try again later.");
     } finally {
-      // Small timeout added here so users can actually see the "Sent" animation finish!
       setTimeout(() => setIsSubmitting(false), 2000); 
     }
   };

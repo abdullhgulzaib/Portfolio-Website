@@ -14,7 +14,7 @@ const Footer = () => {
   <hr style={{ 
   width: "2px", 
   height: "45px", 
-  backgroundColor: "rgba(183, 107, 255, 0.3)", /* Semi-transparent cyber purple */
+  backgroundColor: "rgba(183, 107, 255, 0.3)", 
   border: "none", 
   margin: "0 25px" 
 }} />

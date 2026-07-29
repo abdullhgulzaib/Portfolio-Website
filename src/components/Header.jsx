@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className='Header'>
-      {/* Hamburger - left side, only visible on mobile */}
+
       <button 
         className={`hamburger ${menuOpen ? 'active' : ''}`} 
         onClick={toggleMenu}
@@ -21,7 +21,6 @@ const Header = () => {
         <span></span>
       </button>
 
-      {/* Logo - perfectly centered */}
       <div className='Outer_logo'>
         <div className='logo'>
           <img src={logo} alt="Logo" />

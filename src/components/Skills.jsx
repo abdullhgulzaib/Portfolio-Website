@@ -161,7 +161,7 @@ export default function SkillsSection() {
     </div>
   )}
 </div>
-                {/* <span className="hex-name">{skill.name}</span> */}
+                
               </div>
             </div>
           ))}

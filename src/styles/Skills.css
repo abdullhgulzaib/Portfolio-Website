@@ -187,23 +187,15 @@
     max-width: 340px;
   }
 }
-/* Inside Skills.css */
+
 .custom-skill-icon {
-  width: 150px; /* Adjust this size to fit your hexagons perfectly */
+  width: 150px; 
   height: 150px;
-  object-fit: contain; /* This prevents the image from stretching */
+  object-fit: contain; 
   margin-bottom: 5px;
 }
 
-/* ============================================
-   RESPONSIVE — hex grid
-   The hex-grid width/height and each hex-item's left/top are set as
-   inline px styles from JS constants (Skills.jsx), so a plain CSS rule
-   can't reach them. An !important override in a stylesheet DOES beat a
-   plain (non-!important) inline style, so we use that to drop the
-   absolute honeycomb positioning entirely on small screens and replace
-   it with a simple, reliably-responsive CSS grid instead. Desktop is
-   completely untouched. ---- */
+
 @media (max-width: 900px) {
   .skills-section { height: auto; padding: 50px 20px; }
   .skills-title { font-size: 2.4rem; margin-bottom: 50px; }

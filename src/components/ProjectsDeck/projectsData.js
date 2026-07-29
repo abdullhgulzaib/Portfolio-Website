@@ -1,9 +1,3 @@
-/**
- * PROJECTS DATA
- * Edit this file to add/update projects. The vault will auto-render everything.
- * 'liveDemo' -> leave empty string "" if not deployed yet. The UI will hide the button.
- * 'color'    -> neon glow color for each project card.
- */
 
 export const projects = [
   {
@@ -23,7 +17,7 @@ export const projects = [
       "Built a fully responsive, image-heavy layout using only HTML and CSS without any frameworks, ensuring smooth hover effects and grid alignment across all screen sizes.",
     github: "https://github.com/abdullhgulzaib/Photography-Contest-Landing-Page",
     liveDemo: "https://photography-contest-landing-page.vercel.app/",
-    color: "#a855f7", // Neon Purple
+    color: "#a855f7", 
     glyph: "camera",
   },
   {
@@ -43,7 +37,7 @@ export const projects = [
       "Converted a complex, multi-section professional UI mockup into fully responsive HTML/CSS, mastering CSS Grid and Flexbox to handle the speaker grid and pricing tables without breaking layout on mobile.",
     github: "https://github.com/abdullhgulzaib/Buisness-Handling-Website-Layout",
     liveDemo: "https://buisness-handling-website-layout.vercel.app/",
-    color: "#06b6d4", // Cyan
+    color: "#06b6d4", 
     glyph: "briefcase",
   },
   {
@@ -63,7 +57,7 @@ export const projects = [
       "Replicated a professional template from scratch while learning Bootstrap 5's grid system, ensuring pixel-perfect alignment and custom styling overrides without breaking the framework's responsiveness.",
     github: "https://github.com/abdullhgulzaib/Practise_Project1-Maxent-",
     liveDemo: "https://practise-project1-maxent.vercel.app/",
-    color: "#10b981", // Emerald Green
+    color: "#10b981",
     glyph: "layout",
   },
   {
@@ -83,7 +77,7 @@ export const projects = [
       "Implemented full CRUD functionality using only React useState hooks, handling complex state updates like filtering deleted posts while managing the selected post view — all without any external state management library.",
     github: "https://github.com/abdullhgulzaib/Blog_App",
     liveDemo: "https://blog-app-theta-rouge.vercel.app/", 
-    color: "#f59e0b", // Amber
+    color: "#f59e0b", 
     glyph: "edit",
   },
   {
@@ -103,7 +97,7 @@ export const projects = [
       "Built async API integration with proper error boundaries, handling network failures, invalid city names, and JSON parsing — while keeping the UI responsive and user-friendly during loading and error states.",
     github: "https://github.com/abdullhgulzaib/Weather_App",
     liveDemo: "https://weather-app-sage-nine-20.vercel.app/",
-    color: "#38bdf8", // Sky Blue
+    color: "#38bdf8", 
     glyph: "cloud",
   },
 ];

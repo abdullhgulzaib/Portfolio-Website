@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/FooterCard.css'; // Make sure this path is correct based on where you save the CSS file
+import '../styles/FooterCard.css'; 
 import WhatsappIcon from "../components/ContactIcons/WhatsappIcon";
 import LinkedinIcon from "../components/ContactIcons/LinkedinIcon";
 import GithubIcon from "../components/SkillsIcons/GithubIcon";

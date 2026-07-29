@@ -131,55 +131,9 @@ display: flex;
   filter: drop-shadow(0 8px 18px rgba(183, 107, 255, 0.7));
 }
 
-/* .contact-greeting {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.contact-description {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #d8c8ec;
-  margin-bottom: 40px;
-  max-width: 90%;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.contact-icon {
-  font-size: 1.8rem;
-  background: rgba(183, 107, 255, 0.15);
-  padding: 12px;
-  border-radius: 50%;
-  border: 1px solid rgba(183, 107, 255, 0.4);
-}
-
-.contact-item h4 {
-  margin: 0 0 5px 0;
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.contact-item p {
-  margin: 0;
-  color: #b76bff;
-} */
-
-/* --- Right Side: Glassmorphism Form --- */
 .contact-form-wrapper {
   flex: 1.2;
-  /* This negative margin is the magic! It pushes the form down OVER the map */
+
   margin-bottom: -100px; 
 }
 
@@ -213,7 +167,6 @@ display: flex;
   gap: 20px;
 }
 
-/* --- Minimalist Inputs & Floating Labels --- */
 .input-group {
   position: relative;
   margin-bottom: 30px;
@@ -254,20 +207,19 @@ input:-webkit-autofill:active {
   transition: 0.3s ease all;
 }
 
-/* The Glowing Focus Effect */
+
 .input-group input:focus,
 .input-group textarea:focus {
-  border-bottom: 2px solid var(--purple-light, #9d4edd); /* Bright Cyan focus line */
+  border-bottom: 2px solid var(--purple-light, #9d4edd); 
 }
 
-/* Floating Label Animation */
 .input-group input:focus ~ label,
 .input-group input:not(:placeholder-shown) ~ label,
 .input-group textarea:focus ~ label,
 .input-group textarea:not(:placeholder-shown) ~ label {
   top: -20px;
   font-size: 0.85rem;
-  color: var(--half_wite, #9d4edd); /* Bright Cyan label color */
+  color: var(--half_wite, #9d4edd); 
 }
 
 
@@ -300,8 +252,7 @@ transform: translateY(-8px);
   .contact-form-wrapper {
     flex: none;
     width: 100%;
-    margin-bottom: 0; /* the negative margin was only meant to pull the
-                          form over the (now-removed) map iframe below it */
+    margin-bottom: 0; 
     margin-top: 0;
   }
 }

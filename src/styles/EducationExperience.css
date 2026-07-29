@@ -2,7 +2,6 @@
 .edu-exp-section {
   width: 100%;
   padding: 80px 24px;
-  /* Off-white background matching your About section */
   background: linear-gradient(135deg, #fdfbfb 0%, #f9f5ff 100%); 
   display: flex;
   justify-content: center;
@@ -28,7 +27,6 @@
   box-shadow: 0 15px 35px rgba(64, 3, 54, 0.3), 0 0 30px rgba(157, 78, 221, 0.25);
 }
 
-/* ---- Reusing Your Animated Title Theme ---- */
 .edu-exp-wrapper .line1 {
   font-size: 40px;
   font-weight: 800;
@@ -66,14 +64,13 @@
   box-shadow: 0 0 20px rgba(64, 3, 54, 0.5);
 }
 
-/* ---- Card Grid Layout ---- */
 .cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 horizontal cards on desktop */
+  grid-template-columns: 1fr 1fr; 
   gap: 40px;
 }
 
-/* ---- Glassmorphism Cards ---- */
+
 .glass-card {
    background: rgba(255, 255, 255, 0.904);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -94,7 +91,6 @@
               inset 0 0 12px rgba(157, 78, 221, 0.05);
 }
 
-/* ---- Card Typography & Internal Styling ---- */
 .card-header {
   display: flex;
   align-items: center;
@@ -163,7 +159,6 @@
   border: 1px solid rgba(67, 186, 127, 0.3);
 }
 
-/* ---- Details & Bullet Points ---- */
 .details-section h5 {
   font-size: 13px;
   letter-spacing: 1px;
@@ -174,7 +169,7 @@
 }
 
 .details-section .impact-title {
-  color: #8b799e; /* Matches the 'KEY IMPACT' color from your image */
+  color: #8b799e; 
 }
 
 .details-section p {
@@ -201,7 +196,6 @@
   position: relative;
 }
 
-/* Custom Purple Bullet Points matching your image */
 .feature-list li::before {
   content: "•";
   position: absolute;
@@ -215,7 +209,7 @@
 /* ---- Mobile Responsiveness ---- */
 @media (max-width: 900px) {
   .cards-container {
-    grid-template-columns: 1fr; /* Stacks the cards vertically on smaller screens */
+    grid-template-columns: 1fr; 
   }
   
   .edu-exp-wrapper {

@@ -5,8 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Main Section — EXACT match to preview widget */
 .First_page {
   margin-top: 65px;
   height: 100vh;
@@ -21,7 +19,6 @@
   background-position: center;
 }
 
-/* Mouse Spotlight */
 .spotlight {
   position: absolute;
   width: 500px;
@@ -35,7 +32,6 @@
   z-index: 1;
 }
 
-/* Glass Card Container */
 .First_page .container {
   position: relative;
   width: 70%;
@@ -53,13 +49,13 @@
   border: 1px solid rgba(157, 78, 221, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
-  /* Slide Up Animation */
+
   transform: translateY(80px);
   opacity: 0;
   animation: slideUp 1.2s ease-out forwards;
 }
 
-/* Smooth Slide Up */
+
 @keyframes slideUp {
   to {
     transform: translateY(0);
@@ -93,7 +89,7 @@
   text-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
 }
 
-/* Line 3 — Typing area */
+
 .container .line3 {
   font-size: 30px;
   font-weight: 500;
@@ -201,8 +197,7 @@
 }
 
 @media (max-width: 480px) {
-  /* Header stacks to two rows below 480px (see Header.css), so it's
-     taller than the fixed 65-70px used above — give the hero more room. */
+ 
   .First_page {
     margin-top: 112px;
     height: auto;
