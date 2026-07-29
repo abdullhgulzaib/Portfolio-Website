@@ -481,7 +481,10 @@
    RESPONSIVE
    ============================================ */
 @media (max-width: 640px) {
-  .project-deck-section { padding: 60px 16px; }
+  .project-deck-section {
+    align-items: flex-start;
+    padding: 48px 16px 60px;
+  }
   .deck-subtitle { margin-bottom: 36px; }
   .stage {
     height: 380px;
@@ -509,7 +512,7 @@
 }
 
 @media (max-width: 420px) {
-  .project-deck-section { padding: 48px 12px; }
+  .project-deck-section { padding: 36px 12px 48px; }
   .deck-title { font-size: clamp(24px, 7vw, 30px); }
   .deck-subtitle { font-size: 12px; margin-bottom: 30px; }
   .stage {

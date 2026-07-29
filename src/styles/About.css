@@ -226,44 +226,63 @@
 @media (max-width: 992px) {
   .about_page {
     height: auto;
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
   }
   .about_page .introduction_block {
-    width: 85%;
+    width: 90%;
     flex-direction: column;
     height: auto;
-    padding: 2rem;
+    padding: 1.5rem;
+    gap: 1.25rem;
   }
   .introduction_block .introduction,
   .introduction_block .pic {
     width: 100%;
   }
-  .introduction .line1 { width: 70%; font-size: 42px; }
-  .introduction_block .pic img { height: 260px; margin-top: 0; }
+  /* Image first, text second on mobile/tablet — no JSX reorder needed */
+  .introduction_block .pic { order: -1; }
+  .introduction_block .introduction { padding: 0; }
+
+  .introduction .line1 { width: 70%; font-size: 42px; margin-bottom: 12px; }
+  .introduction_block .pic img { height: 220px; margin-top: 0; }
 }
 
 @media (max-width: 768px) {
-  .introduction .line1 { font-size: 38px; }
-  .introduction .line2 { font-size: 18px; padding: 1.2rem; }
-  .introduction_block .pic img { height: 220px; }
+  .introduction .line1 { font-size: 36px; }
+  .introduction .line2 { font-size: 17px; padding: 1.1rem; line-height: 1.55; }
+  .introduction_block .pic img { height: 190px; }
 }
 
 @media (max-width: 480px) {
+  .about_page { padding: 1.5rem 0.75rem; }
   .about_page .main_container {
     width: 100%;
     border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .about_page .introduction_block {
     width: 100%;
-    padding: 1.25rem;
-    gap: 1.25rem;
-  }
-  .introduction .line1 { font-size: 30px; width: auto; }
-  .introduction .line2 {
-    font-size: 15px;
     padding: 1rem;
-    line-height: 1.6;
+    gap: 1rem;
   }
-  .introduction .line2 span { font-size: 15px; }
-  .introduction_block .pic img { height: 180px; }
+  .introduction .line1 { font-size: 26px; width: auto; margin-bottom: 8px; }
+  .introduction_block .pic img { height: 150px; border-width: 3px; }
+
+  /* Shorter, wider text box: less inner padding = more characters per
+     line = fewer wrapped lines = noticeably shorter overall height. */
+  .introduction .line2 {
+    font-size: 13.5px;
+    padding: 0.8rem 0.9rem;
+    line-height: 1.5;
+    border-radius: 12px;
+  }
+  .introduction .line2 span { font-size: 13.5px; }
+}
+
+@media (max-width: 360px) {
+  .introduction .line2 { font-size: 13px; padding: 0.7rem 0.8rem; }
+  .introduction .line2 span { font-size: 13px; }
+  .introduction_block .pic img { height: 130px; }
+
 }
