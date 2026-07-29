@@ -283,3 +283,47 @@ transform: translateY(-8px);
               0 0 25px rgba(183, 107, 255, 0.2),
               inset 0 0 12px rgba(183, 107, 255, 0.1);
 }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 992px) {
+  .contact-section { height: auto; padding: 60px 20px 40px; }
+  .contact-container { flex-direction: column; gap: 30px; }
+  .contact-info {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+  .contact-form-wrapper {
+    width: 100%;
+    margin-bottom: 0; /* the negative margin was only meant to pull the
+                          form over the (now-removed) map iframe below it */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact.title {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-top: 22px;
+  }
+  .contact-icons { gap: 30px; padding: 14px 0; }
+  .contact-icons a { width: 70px; height: 70px; }
+  .contact-form { padding: 28px 24px; }
+  .form-row { flex-direction: column; gap: 0; }
+}
+
+@media (max-width: 480px) {
+  .contact-section { padding: 50px 12px 30px; }
+  .contact.title { font-size: 1.5rem; margin-left: 16px; margin-top: 18px; }
+  .contact-container { gap: 20px; }
+  .contact-icons { gap: 22px; padding: 10px 0; border-radius: 14px; }
+  .contact-icons a { width: 56px; height: 56px; }
+  .contact-form { padding: 22px 18px; border-radius: 14px; }
+  .form-title { font-size: 1.2rem; margin-bottom: 20px; }
+  .input-group { margin-bottom: 24px; }
+  .input-group input,
+  .input-group textarea,
+  .input-group label { font-size: 1rem; }
+}

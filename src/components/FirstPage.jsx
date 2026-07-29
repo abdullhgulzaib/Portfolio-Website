@@ -13,7 +13,7 @@ const FirstPage = () => {
       'Problem Solver',
       'Open Source Contributor',
       'Landing Page Designer',
-      'Learning back-end Development',
+      'Back-end Learner',
     ];
     const typewriter = document.getElementById('typewriter');
     if (!typewriter) return;

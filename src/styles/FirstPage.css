@@ -193,17 +193,36 @@
     height: auto;
     padding: 2rem 1.5rem;
   }
+  .container .line1,
+  .container .line1 span { font-size: 32px; }
   .container .line2 { font-size: 32px; }
   .container .line3 { font-size: 16px; }
   .btn { font-size: 14px; padding: 10px 20px; }
 }
 
 @media (max-width: 480px) {
+  /* Header stacks to two rows below 480px (see Header.css), so it's
+     taller than the fixed 65-70px used above — give the hero more room. */
+  .First_page {
+    margin-top: 112px;
+    height: auto;
+    min-height: calc(100vh - 112px);
+    padding: 24px 0;
+  }
   .First_page .container {
     width: 90%;
     padding: 1.5rem 1rem;
   }
-  .container .line2 { font-size: 28px; }
+  .container .line1,
+  .container .line1 span { font-size: 24px; }
+  .container .line2 { font-size: 26px; }
+  .container .line3 { font-size: 14px; flex-wrap: wrap; }
   .hero-actions { flex-direction: column; width: 100%; }
   .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 360px) {
+  .container .line2 { font-size: 22px; }
+  .container .line1,
+  .container .line1 span { font-size: 20px; }
 }

@@ -28,6 +28,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keeps anchor-linked sections from hiding behind the fixed header
+   when jumping via nav links. Values match the Header's real height
+   at each breakpoint (see Header.css). */
+#Home,
+#About,
+#Skills,
+#EducationExperience,
+#projects,
+#contact {
+  scroll-margin-top: 65px;
+}
+
+@media (max-width: 480px) {
+  #Home,
+  #About,
+  #Skills,
+  #EducationExperience,
+  #projects,
+  #contact {
+    scroll-margin-top: 112px;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

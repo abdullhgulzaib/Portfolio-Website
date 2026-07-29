@@ -224,6 +224,10 @@
 }
 /* RESPONSIVE – Tera Layout Same */
 @media (max-width: 992px) {
+  .about_page {
+    height: auto;
+    padding: 2.5rem 1rem;
+  }
   .about_page .introduction_block {
     width: 85%;
     flex-direction: column;
@@ -235,11 +239,31 @@
     width: 100%;
   }
   .introduction .line1 { width: 70%; font-size: 42px; }
-  .introduction_block .pic img { height: 260px; }
+  .introduction_block .pic img { height: 260px; margin-top: 0; }
 }
 
 @media (max-width: 768px) {
   .introduction .line1 { font-size: 38px; }
   .introduction .line2 { font-size: 18px; padding: 1.2rem; }
   .introduction_block .pic img { height: 220px; }
+}
+
+@media (max-width: 480px) {
+  .about_page .main_container {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .about_page .introduction_block {
+    width: 100%;
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+  .introduction .line1 { font-size: 30px; width: auto; }
+  .introduction .line2 {
+    font-size: 15px;
+    padding: 1rem;
+    line-height: 1.6;
+  }
+  .introduction .line2 span { font-size: 15px; }
+  .introduction_block .pic img { height: 180px; }
 }

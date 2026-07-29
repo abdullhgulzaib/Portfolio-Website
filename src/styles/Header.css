@@ -191,3 +191,56 @@ height: inherit;
     padding: 6px 12px;
   }
 }
+
+/* ---- Small tablets: tighten spacing, keep single row ---- */
+@media (max-width: 640px) {
+  .Header {
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+  .Header .nav {
+    width: auto;
+    gap: 2px;
+  }
+  .Header .nav a {
+    font-size: 0.85rem;
+    padding: 6px 8px;
+  }
+}
+
+/* ---- Phones: 6 links no longer fit in one row, so stack the header
+   (logo on top, nav wraps into 2 rows beneath it). Height becomes
+   auto here — First_page.css and index.css compensate with a matching
+   offset (see their 480px / scroll-margin-top rules). ---- */
+@media (max-width: 480px) {
+  .Header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: auto;
+    padding: 8px 0 6px;
+  }
+  .Header .Outer_logo {
+    width: auto;
+    height: auto;
+    padding: 2px 0 4px;
+  }
+  .Header .Outer_logo img {
+    height: 36px;
+    max-width: 90px;
+    padding: 3px 8px;
+  }
+  .Header .nav {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 2px;
+    padding: 0 6px;
+  }
+  .Header .nav a {
+    font-size: 0.68rem;
+    padding: 5px 7px;
+    letter-spacing: 0.2px;
+  }
+}
